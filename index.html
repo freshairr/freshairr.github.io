@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Udundi Explore</title>
+	</head>
+	<body
+		class="bg-cover bg-fill bg-no-repeat w-full relative bg-[url('../images/udundi/Coding-Challenge-Image.png')]"
+	>
+		<!-- Global container -->
+		<div class="max-w-7xl">
+			<!-- Nav container -->
+			<nav
+				class="bg-transparent fixed w-full z-10 left-0 right-0 mx-auto px-6 py-4 flex items-center justify-between font-serif font-medium text-white text-xl backdrop-filter backdrop-blur-2xl"
+			>
+				<!-- Hambuger button -->
+				<button type="button" class="hamburger">
+					<span class="hamburger-top w-[20px]"></span>
+					<span class="hamburger-middle w-[15px]"></span>
+					<span class="hamburger-bottom w-[10px]"></span>
+				</button>
+				<!-- Links -->
+				<div class="hidden md:flex md:space-x-8">
+					<a href="#">Explore</a>
+					<a href="#">Plan</a>
+					<a href="#">Discover</a>
+					<a href="#">Stay</a>
+				</div>
+				<!-- Search Icon -->
+				<button class="hidden md:flex md:space-x-8">
+					<svg class="svg-icon" viewBox="0 0 20 20">
+						<path
+							fill="none"
+							d="M19.129,18.164l-4.518-4.52c1.152-1.373,1.852-3.143,1.852-5.077c0-4.361-3.535-7.896-7.896-7.896
+                                    c-4.361,0-7.896,3.535-7.896,7.896s3.535,7.896,7.896,7.896c1.934,0,3.705-0.698,5.078-1.853l4.52,4.519
+                                    c0.266,0.268,0.699,0.268,0.965,0C19.396,18.863,19.396,18.431,19.129,18.164z M8.567,15.028c-3.568,0-6.461-2.893-6.461-6.461
+                                    s2.893-6.461,6.461-6.461c3.568,0,6.46,2.893,6.46,6.461S12.135,15.028,8.567,15.028z"
+						></path>
+					</svg>
+				</button>
+			</nav>
+			<!-- Sidebar container-->
+			<div class="flex flex-row">
+				<div
+					class="w-1/4 bg-[#611818] h-screen relative flex justify-center flex-col"
+				>
+					<!-- Sidebar content here -->
+					<p
+						class="absolute whitespace-nowrap top-2/3 transform -translate-y-1/2 ml-24 text-white text-resizable w-full"
+					>
+						Explore
+					</p>
+					<!-- modal button -->
+					<div
+						class="absolute bottom-0 flex justify-center w-full transform -translate-y-44 -translate-x-9"
+						id="open-modal"
+					>
+						<button
+							class="bg-white text-[#611818] rounded-full p-3"
+							id="modal-button"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-6 w-6"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<!-- Modal container-->
+				<div id="modal" class="modal">
+					<div class="m-8 mt-6">
+						<p
+							class="text-[#611818] text-4xl font-medium border-image mb-5"
+						>
+							Explore
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Non doloremque autem in ea quod iure laborum
+							rerum fugiat, blanditiis et laboriosam molestias
+							consequatur voluptates amet aspernatur porro nihil
+							cupiditate incidunt. Lorem ipsum dolor, sit amet
+							consectetur adipisicing elit. Doloremque mollitia
+							voluptates recusandae velit illum minima dolorum
+							ratione saepe tenetur quo, est amet nemo, asperiores
+							veniam vitae voluptate autem natus! Neque? Lorem
+							ipsum dolor sit amet consectetur adipisicing elit.
+							Minima quia fugit fuga impedit. Ex deserunt ratione
+							dignissimos error, quae, consectetur fugit voluptate
+							praesentium libero illo officiis quo totam similique
+							optio!
+						</p>
+					</div>
+
+					<button id="close-modal">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<!-- Footer container -->
+			<footer
+				class="fixed bottom-0 right-0 bg-transparent space-y-4 p-6 scale-75"
+			>
+				<!-- Social button links -->
+				<button>
+					<img src="./images/udundi/Facebook.svg" />
+				</button>
+				<br />
+				<button><img src="./images/udundi/Instagram.svg" /></button>
+			</footer>
+			<script src="./js/script.js"></script>
+		</div>
+	</body>
+</html>
